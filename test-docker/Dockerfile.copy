@@ -1,0 +1,3 @@
+FROM node:alpine3.14
+COPY index.js /app/inex.js
+

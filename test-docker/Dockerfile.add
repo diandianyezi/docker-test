@@ -1,0 +1,3 @@
+FROM node:alpine3.14
+ADD index.js.zip /app/
+
