@@ -407,11 +407,11 @@ centos                latest    300e315adb2f   8 months ago    209MB
 
 [root@iZ8vb6unf4zj3xa0nt66j2Z ~]# docker inspect 08a40c35dbab
 
-![image-20210822173132516](/Users/zhangting/Library/Application Support/typora-user-images/image-20210822173132516.png)
+![image-20210822173132516](https://raw.githubusercontent.com/diandianyezi/typora-images/master/img/image-20210822173132516.png)
 
 在宿主机里对应的目录里找到了对应的**container.txt**文件
 
-![image-20210822173339878](/Users/zhangting/Library/Application Support/typora-user-images/image-20210822173339878.png)
+![image-20210822173339878](https://raw.githubusercontent.com/diandianyezi/typora-images/master/img/image-20210822173339878.png)
 
 
 
@@ -426,21 +426,21 @@ docker run -it --name docker01 yezidiandian/centos:1.0
 docker run -it --name docker02 --volumes-from docker01 yezidiandian/centos:1.0
 ```
 
-![image-20210822190204670](/Users/zhangting/Library/Application Support/typora-user-images/image-20210822190204670.png)
+![image-20210822190204670](https://raw.githubusercontent.com/diandianyezi/typora-images/master/img/image-20210822190204670.png)
 
 
 
-![image-20210822190719913](/Users/zhangting/Library/Application Support/typora-user-images/image-20210822190719913.png)
+![image-20210822190719913](https://raw.githubusercontent.com/diandianyezi/typora-images/master/img/image-20210822190719913.png)
 
 
 
 在docker01的volume01中新建一个docker01文件
 
-![image-20210822190955446](/Users/zhangting/Library/Application Support/typora-user-images/image-20210822190955446.png)
+![image-20210822190955446](https://raw.githubusercontent.com/diandianyezi/typora-images/master/img/image-20210822190955446.png)
 
 在docker02中能看到了
 
-![image-20210822191052245](/Users/zhangting/Library/Application Support/typora-user-images/image-20210822191052245.png)
+![image-20210822191052245](https://raw.githubusercontent.com/diandianyezi/typora-images/master/img/image-20210822191052245.png)
 
 
 
@@ -448,17 +448,17 @@ docker01容器就是数据卷容器
 
 
 
-![image-20210822191333133](/Users/zhangting/Library/Application Support/typora-user-images/image-20210822191333133.png)
+![image-20210822191333133](https://raw.githubusercontent.com/diandianyezi/typora-images/master/img/image-20210822191333133.png)
 
 
 
 在docker03中新建一个docker03文件，在docker01和docker02中都能看到
 
-![image-20210822191422590](/Users/zhangting/Library/Application Support/typora-user-images/image-20210822191422590.png)
+![image-20210822191422590](https://raw.githubusercontent.com/diandianyezi/typora-images/master/img/image-20210822191422590.png)
 
 
 
-![image-20210822191706995](/Users/zhangting/Library/Application Support/typora-user-images/image-20210822191706995.png)
+![image-20210822191706995](https://raw.githubusercontent.com/diandianyezi/typora-images/master/img/image-20210822191706995.png)
 
 
 
@@ -517,7 +517,7 @@ dockerfile用来构建镜像文件，命令参数脚本！
 
    
 
-![image-20210822194850743](/Users/zhangting/Library/Application Support/typora-user-images/image-20210822194850743.png)
+![image-20210822194850743](https://raw.githubusercontent.com/diandianyezi/typora-images/master/img/image-20210822194850743.png)
 
 
 
@@ -542,7 +542,7 @@ ENV  # 构建的时候 设置环境变量
 
 
 
-![image-20210822195238148](/Users/zhangting/Library/Application Support/typora-user-images/image-20210822195238148.png)
+![image-20210822195238148](https://raw.githubusercontent.com/diandianyezi/typora-images/master/img/image-20210822195238148.png)
 
 
 
@@ -587,7 +587,7 @@ docker build -f my-centos-dockerfile -t mycentos:0.1 .
 docker run -it mycentos:0.1
 ```
 
-![image-20210822204642297](/Users/zhangting/Library/Application Support/typora-user-images/image-20210822204642297.png)
+![image-20210822204642297](https://raw.githubusercontent.com/diandianyezi/typora-images/master/img/image-20210822204642297.png)
 
 
 
@@ -599,7 +599,7 @@ docker history 镜像id
 
 
 
-![image-20210822205228434](/Users/zhangting/Library/Application Support/typora-user-images/image-20210822205228434.png)
+![image-20210822205228434](https://raw.githubusercontent.com/diandianyezi/typora-images/master/img/image-20210822205228434.png)
 
 
 
@@ -622,9 +622,9 @@ CMD ["ls","-a"]
 
 
 
-![image-20210822210508808](/Users/zhangting/Library/Application Support/typora-user-images/image-20210822210508808.png)
+![image-20210822210508808](https://raw.githubusercontent.com/diandianyezi/typora-images/master/img/image-20210822210508808.png)
 
-![image-20210822210613924](/Users/zhangting/Library/Application Support/typora-user-images/image-20210822210613924.png)
+![image-20210822210613924](https://raw.githubusercontent.com/diandianyezi/typora-images/master/img/image-20210822210613924.png)
 
 
 
@@ -672,7 +672,7 @@ FROM centos
 ENTRYPOINT ["ls","-a"]
 ```
 
-![image-20210822211556568](/Users/zhangting/Library/Application Support/typora-user-images/image-20210822211556568.png)
+![image-20210822211556568](https://raw.githubusercontent.com/diandianyezi/typora-images/master/img/image-20210822211556568.png)
 
 
 
@@ -740,7 +740,7 @@ docker push 用户名/镜像名:tag
 
 
 
-![image-20210822215518527](/Users/zhangting/Library/Application Support/typora-user-images/image-20210822215518527.png)
+![image-20210822215518527](https://raw.githubusercontent.com/diandianyezi/typora-images/master/img/image-20210822215518527.png)
 
 lo：本机回环地址
 
